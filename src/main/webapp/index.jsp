@@ -25,7 +25,10 @@
 
 <ul>
   <li>
-    <a href="examples/helloWorld">examples/helloWorld</a>
+    <a href="examples/hello">examples/hello</a>
+  </li>
+  <li>
+    <a href="examples/taglibs">examples/taglibs</a>
   </li>
 </ul>
 
