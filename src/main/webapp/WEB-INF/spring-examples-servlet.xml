@@ -49,7 +49,7 @@
         -->
       </map>
     </property>
-    <property name="templateUpdateDelayMilliseconds" value="60000" />
+    <property name="templateUpdateDelayMilliseconds" value="5000" />
     <property name="localizedTemplateLookup" value="false" />
     <property name="templateLoader">
       <bean class="org.apache.freemarker.spring.SpringResourceTemplateLoader">
