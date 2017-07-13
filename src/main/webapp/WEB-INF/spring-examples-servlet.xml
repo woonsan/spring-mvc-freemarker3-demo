@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <context:component-scan base-package="com.github.woonsan.demo.springmvc.f3.controller" />
+
+  <bean id="configuration" class="org.apache.freemarker.spring.ConfigurationFactoryBean">
+    <property name="incompatibleImprovements" value="3.0.0" />
+    <property name="settings">
+      <props>
+        <prop key="source_encoding">UTF-8</prop>
+        <prop key="whitespace_stripping">true</prop>
+        <prop key="template_cache_storage">strong:20, soft:250</prop>
+      </props>
+    </property>
+    <property name="sharedVariables">
+      <map>
+        <entry key="sharedVar1" value="sharedVal1" />
+        <entry key="sharedVar2" value="sharedVal2" />
+      </map>
+    </property>
+    <property name="autoImports">
+      <map>
+        <!--
+        <entry key="mylib1" value="/libs/mylib1.ftl" />
+        <entry key="mylib2" value="/libs/mylib2.ftl" />
+        -->
+      </map>
+    </property>
+    <property name="templateUpdateDelayMilliseconds" value="60000" />
+    <property name="localizedTemplateLookup" value="false" />
+    <property name="templateLoader">
+      <bean class="org.apache.freemarker.spring.SpringResourceTemplateLoader">
+      </bean>
+    </property>
+  </bean>
+
+  <bean id="viewResolver" class="org.apache.freemarker.spring.web.view.FreemarkerViewResolver">
+    <property name="configuration" ref="configuration" />
+    <!--
+    <property name="prefix" value="classpath:/META-INF/views/" />
+    -->
+    <property name="prefix" value="/WEB-INF/views/" />
+    <property name="suffix" value=".ftl" />
+  </bean>
+
+</beans>
