@@ -57,7 +57,7 @@
     </property>
   </bean>
 
-  <bean id="viewResolver" class="org.apache.freemarker.spring.web.view.FreemarkerViewResolver">
+  <bean id="viewResolver" class="org.apache.freemarker.spring.web.view.FreeMarkerViewResolver">
     <property name="configuration" ref="configuration" />
     <!--
     <property name="prefix" value="classpath:/META-INF/views/" />

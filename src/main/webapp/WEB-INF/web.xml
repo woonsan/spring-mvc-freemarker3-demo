@@ -20,8 +20,8 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
 
-  <display-name>Spring MVC web application with Freemarker 3 templating demo</display-name>
-  <description>Spring MVC web application with Freemarker 3 templating demo</description>
+  <display-name>Spring MVC web application with Apache FreeMarker 3 templating demo</display-name>
+  <description>Spring MVC web application with Apache FreeMarker 3 templating demo</description>
 
   <servlet>
     <servlet-name>freemarker</servlet-name>

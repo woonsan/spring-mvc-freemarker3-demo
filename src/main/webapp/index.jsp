@@ -17,7 +17,7 @@
 <html>
 <body>
 
-<h1>Welcome to Spring MVC web application with Freemarker 3 templating demo!</h1>
+<h1>Welcome to Spring MVC web application with Apache FreeMarker 3 templating demo!</h1>
 
 <hr/>
 

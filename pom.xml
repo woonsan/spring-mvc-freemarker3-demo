@@ -24,8 +24,8 @@
   <version>0.1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>Spring MVC web application with Freemarker 3 templating demo project</name>
-  <description>Spring MVC web application with Freemarker 3 templating demo project</description>
+  <name>Spring MVC web application with Apache FreeMarker 3 templating demo project</name>
+  <description>Spring MVC web application with Apache FreeMarker 3 templating demo project</description>
 
   <properties>
 
