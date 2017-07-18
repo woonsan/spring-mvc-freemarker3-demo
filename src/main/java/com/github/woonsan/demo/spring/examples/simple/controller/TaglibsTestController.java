@@ -16,19 +16,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.github.woonsan.demo.springmvc.f3.controller;
+package com.github.woonsan.demo.spring.examples.simple.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HelloWorldController {
+public class TaglibsTestController {
 
-    @RequestMapping("/hello")
+    @RequestMapping("/taglibs")
     public String hello(Model model) {
         model.addAttribute("message", "Hello World!");
-        return "hello";
+        return "taglibs";
     }
 
 }

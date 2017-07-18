@@ -24,15 +24,14 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-  <context:component-scan base-package="com.github.woonsan.demo.springmvc.f3.controller" />
+  <context:component-scan base-package="com.github.woonsan.demo.spring.examples.simple.controller" />
 
   <bean id="configuration" class="org.apache.freemarker.spring.ConfigurationFactoryBean">
     <property name="incompatibleImprovements" value="3.0.0" />
     <property name="settings">
       <props>
-        <prop key="source_encoding">UTF-8</prop>
-        <prop key="whitespace_stripping">true</prop>
-        <prop key="template_cache_storage">strong:20, soft:250</prop>
+        <prop key="sourceEncoding">UTF-8</prop>
+        <prop key="templateCacheStorage">strong:20, soft:250</prop>
       </props>
     </property>
     <property name="sharedVariables">

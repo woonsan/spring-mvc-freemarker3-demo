@@ -21,15 +21,22 @@
 
 <hr/>
 
-<h3>Examples</h3>
+<h3>Simple Examples</h3>
 
 <ul>
   <li>
-    <a href="examples/hello">examples/hello</a>
+    <a href="simple-examples/hello">examples/hello</a>
   </li>
   <li>
-    <a href="examples/taglibs">examples/taglibs</a>
+    <a href="simple-examples/taglibs">examples/taglibs</a>
   </li>
+</ul>
+
+<hr/>
+
+<h3>MVC Examples With Annotations</h3>
+
+<ul>
 </ul>
 
 </body>
