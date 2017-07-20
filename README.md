@@ -2,7 +2,7 @@
 
 Spring MVC web application with Apache FreeMarker 3 templating demo project
 
-## Build
+## Build and Run
 
 First of all, as Apache FreeMarker 3 is still in development,
 you need to checkout ```3``` branch of
@@ -13,13 +13,7 @@ build/install artifacts into your local Maven repository like the following:
         $ cd freemarker
         $ gradlew install 
 
-Now, you can build this demo project:
-
-        $ mvn clean package
-
-## Run
-
-You can run this demo web application with Jetty plugin:
+Now, you can run this demo project:
 
         $ mvn jetty:run
 
