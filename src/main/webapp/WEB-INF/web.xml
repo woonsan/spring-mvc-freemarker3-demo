@@ -40,7 +40,13 @@
   <servlet>
     <servlet-name>simple-examples</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
+    <load-on-startup>100</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>mvc-examples</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>200</load-on-startup>
   </servlet>
 
   <servlet-mapping>
@@ -51,6 +57,11 @@
   <servlet-mapping>
     <servlet-name>simple-examples</servlet-name>
     <url-pattern>/simple-examples/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>mvc-examples</servlet-name>
+    <url-pattern>/mvc-examples/*</url-pattern>
   </servlet-mapping>
 
   <welcome-file-list>

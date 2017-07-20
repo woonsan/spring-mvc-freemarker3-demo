@@ -34,9 +34,15 @@
 
 <hr/>
 
-<h3>MVC Examples With Annotations</h3>
+<h3>MVC Examples</h3>
 
 <ul>
+  <li>
+    <a href="mvc-examples/hello">examples/hello</a>
+  </li>
+  <li>
+    <a href="mvc-examples/taglibs">examples/taglibs</a>
+  </li>
 </ul>
 
 </body>
