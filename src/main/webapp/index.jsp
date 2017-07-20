@@ -25,23 +25,36 @@
 
 <ul>
   <li>
-    <a href="simple-examples/hello">examples/hello</a>
+    <a href="simple-examples/hello">simple-examples/hello</a>
   </li>
   <li>
-    <a href="simple-examples/taglibs">examples/taglibs</a>
+    <a href="simple-examples/taglibs">simple-examples/taglibs</a>
   </li>
 </ul>
 
 <hr/>
 
-<h3>MVC Examples</h3>
+<h3>MVC Examples 1</h3>
 
 <ul>
   <li>
-    <a href="mvc-examples/hello">examples/hello</a>
+    <a href="mvc-examples-1/hello">mvc-examples-1/hello</a>
   </li>
   <li>
-    <a href="mvc-examples/taglibs">examples/taglibs</a>
+    <a href="mvc-examples-1/taglibs">mvc-examples-1/taglibs</a>
+  </li>
+</ul>
+
+<hr/>
+
+<h3>MVC Examples 2</h3>
+
+<ul>
+  <li>
+    <a href="mvc-examples-2/hello">mvc-examples-2/hello</a>
+  </li>
+  <li>
+    <a href="mvc-examples-2/taglibs">mvc-examples-2/taglibs</a>
   </li>
 </ul>
 
