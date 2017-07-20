@@ -30,6 +30,7 @@
   <context:component-scan base-package="com.github.woonsan.demo.spring.examples.simple.controller" />
 
   <mvc:view-resolvers>
+    <!-- Note: you can also embed viewResolver bean definition here instead of referencing a bean. -->
     <ref bean="viewResolver" />
   </mvc:view-resolvers>
 
