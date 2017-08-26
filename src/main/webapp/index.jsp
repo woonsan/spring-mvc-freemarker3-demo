@@ -43,6 +43,9 @@
   <li>
     <a href="mvc-examples-1/taglibs">mvc-examples-1/taglibs</a>
   </li>
+  <li>
+    <a href="mvc-examples-1/users">mvc-examples-1/users</a>
+  </li>
 </ul>
 
 <hr/>

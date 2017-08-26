@@ -27,7 +27,7 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-  <context:component-scan base-package="com.github.woonsan.demo.spring.examples.mvc,com.github.woonsan.demo.spring.examples.simple.controller" />
+  <context:component-scan base-package="com.github.woonsan.demo.spring.examples.mvc,com.github.woonsan.demo.spring.examples.simple.controller,com.github.woonsan.demo.spring.examples.mvc.form" />
 
   <mvc:annotation-driven/>
 
