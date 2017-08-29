@@ -14,7 +14,7 @@
     <tr>
       <th>Password:</th>
       <td>
-        <@spring.bind "user.password">
+        <@spring.bind "user.password"; status>
           <input type="password" name="password" value="${status.value!}" />
         </@spring.bind>
       </td>
@@ -22,7 +22,7 @@
     <tr>
       <th>E-Mail:</th>
       <td>
-        <@spring.bind "user.email">
+        <@spring.bind "user.email"; status>
           <input type="text" name="email" value="${status.value!}" />
         </@spring.bind>
       </td>
@@ -30,7 +30,7 @@
     <tr>
       <th>First name:</th>
       <td>
-        <@spring.bind "user.firstName">
+        <@spring.bind "user.firstName"; status>
           <input type="text" name="firstName" value="${status.value!}" />
         </@spring.bind>
       </td>
@@ -38,7 +38,7 @@
     <tr>
       <th>Last name:</th>
       <td>
-        <@spring.bind "user.lastName">
+        <@spring.bind "user.lastName"; status>
           <input type="text" name="lastName" value="${status.value!}" />
         </@spring.bind>
       </td>
