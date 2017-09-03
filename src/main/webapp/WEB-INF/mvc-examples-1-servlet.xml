@@ -31,4 +31,8 @@
 
   <mvc:annotation-driven/>
 
+  <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+    <property name="basename" value="classpath:Messages"/>
+  </bean>
+
 </beans>
