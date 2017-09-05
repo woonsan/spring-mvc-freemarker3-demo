@@ -1,3 +1,4 @@
+<#ftl outputFormat="HTML">
 <html>
 <head>
 <title>Spring MVC Form Example - User</title>
@@ -5,7 +6,7 @@
 
 <h1>User</h1>
 
-<p>${spring.message("user.form.message", user.firstName, user.lastName, user.email)?html}</p>
+<p>${spring.message("user.form.message", user.firstName, user.lastName, user.email)}</p>
 
 <table border="2">
   <tbody>
