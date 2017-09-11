@@ -1,10 +1,10 @@
 <#ftl outputFormat="HTML">
 <html>
 <head>
-<title>Spring MVC Form Example - User</title>
+<title>Spring MVC Form Example - User Edit Form</title>
 </head>
 
-<h1>User</h1>
+<h1>Editing User: ${spring.eval("user.firstName + ' ' + user.lastName")}</h1>
 
 <p>${spring.message("user.form.message", user.firstName, user.lastName, user.email)}</p>
 
@@ -43,6 +43,14 @@
       <td>
         <@spring.bind "user.lastName"; status>
           <input type="text" name="lastName" value="${status.value!}" />
+        </@spring.bind>
+      </td>
+    </tr>
+    <tr>
+      <th>${spring.message("user.birthDate")!}</th>
+      <td>
+        <@spring.bind "user.birthDate"; status>
+          ${spring.transform(status.editor, status.actualValue)!}
         </@spring.bind>
       </td>
     </tr>

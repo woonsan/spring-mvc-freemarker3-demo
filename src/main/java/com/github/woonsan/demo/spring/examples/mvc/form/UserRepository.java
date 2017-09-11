@@ -1,5 +1,6 @@
 package com.github.woonsan.demo.spring.examples.mvc.form;
 
+import java.util.Calendar;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
@@ -17,6 +18,11 @@ public class UserRepository {
         user.setEmail("john@example.com");
         user.setFirstName("John");
         user.setLastName("Doe");
+        Calendar birthDate = Calendar.getInstance();
+        birthDate.set(Calendar.YEAR, 1971);
+        birthDate.set(Calendar.MONTH, Calendar.JANUARY);
+        birthDate.set(Calendar.DATE, 5);
+        user.setBirthDate(birthDate.getTime());
         usersMap.put(id, user);
 
         id = "04d6080b-2098-4eaf-90ee-7331caab5e91";
@@ -24,6 +30,11 @@ public class UserRepository {
         user.setEmail("jane@example.com");
         user.setFirstName("Jane");
         user.setLastName("Doe");
+        birthDate = Calendar.getInstance();
+        birthDate.set(Calendar.YEAR, 1970);
+        birthDate.set(Calendar.MONTH, Calendar.FEBRUARY);
+        birthDate.set(Calendar.DATE, 7);
+        user.setBirthDate(birthDate.getTime());
         usersMap.put(id, user);
     }
 
@@ -67,6 +78,7 @@ public class UserRepository {
         clone.setEmail(source.getEmail());
         clone.setFirstName(source.getFirstName());
         clone.setLastName(source.getLastName());
+        clone.setBirthDate(source.getBirthDate());
         return clone;
     }
 }

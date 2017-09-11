@@ -1,5 +1,7 @@
 package com.github.woonsan.demo.spring.examples.mvc.form;
 
+import java.util.Date;
+
 public class User {
 
     private final String id;
@@ -7,6 +9,7 @@ public class User {
     private String email;
     private String firstName;
     private String lastName;
+    private Date birthDate;
 
     public User(final String id) {
         this.id = id;
@@ -46,5 +49,13 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
     }
 }
